@@ -1,0 +1,526 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.section {
+    position: relative;
+}
+
+.images {
+    width: 300px;
+}
+
+#section0 {
+    background-color: #eee;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+}
+
+#section1 {
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+    background-image: url(../images/2.jpg);
+}
+
+#section2 {
+    background-image: url(../images/3.jpg);
+    color: #fff;
+    text-shadow: 1px 1px 1px #666;
+}
+
+#section3 {
+    color: #008283;
+    background-image: url(../images/4.jpg);
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#section4 {
+    color: #fff;
+    background-image: url(../images/2.jpg);
+    text-shadow: 1px 1px 1px #fff;
+}
+
+#section5 {
+    color: #ff0000;
+    background-image: url(../images/4.jpg);
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.left {
+    float: left;
+}
+
+
+/**
+ * 第一个页面
+ */
+
+.intro {
+    position: absolute;
+    top: 30%;
+    left: 54%;
+    width: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.intro>.logo {
+    width: 160px;
+    float: left;
+}
+
+.intro>h2 {
+    font-size: 40px;
+    margin: 20px 0 16px 0;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.intro>p {
+    opacity: 0;
+    font-size: 20px;
+}
+
+
+/**
+ * 第二个页面
+ */
+
+.page2 {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.page2>img {
+    width: 300px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.page2>.img1 {
+    margin: 0 60px 0 0;
+    opacity: 0;
+}
+
+.page2>.page2-describe {
+    position: absolute;
+    width: 360px;
+    top: 40%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    right: 0;
+}
+
+.page2>.page2-describe p {
+    opacity: 0;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.page2>.finger {
+    position: absolute;
+    right: 14%;
+    top: -20px;
+    opacity: 0;
+    width: 100px;
+}
+
+.page2>.finger-animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 3s;
+    animation-name: fingerA;
+}
+
+
+/**
+ * 第三个页面
+ */
+
+.page3 {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.page3>img {
+    width: 300px;
+    display: inline-block;
+    opacity: 0;
+}
+
+.page3>.img1 {
+    margin: 0 60px 0 0;
+}
+
+.page3>.page3-describe {
+    position: absolute;
+    width: 360px;
+    top: 40%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    right: 0;
+}
+
+.page3>.page3-describe p {
+    opacity: 0;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.page3>.finger {
+    position: absolute;
+    right: 14%;
+    top: -20px;
+    opacity: 0;
+    width: 100px;
+}
+
+.page3>.finger-animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 3s;
+    animation-name: fingerA;
+}
+
+.page3>.describe>p {
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+
+/**
+ * 第四页面
+ */
+
+.page4 {
+    position: absolute;
+    text-align: center;
+    top: 1%;
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.card {
+    width: 340px;
+    position: relative;
+    height: 580px;
+    margin: 1% auto;
+    opacity: 0;
+}
+
+.page4>.card>.images {
+    width: 90%;
+    position: absolute;
+    box-shadow: 10px 10px 10px #333333;
+}
+
+.page4>.card img {
+    /*width: 26%;*/
+}
+
+.page4>.card>.img1 {
+    left: 0px;
+    top: 30px;
+}
+
+.page4>.card>.img2 {
+    left: 20px;
+    top: 15px;
+}
+
+.page4>.card>.img3 {
+    left: 40px;
+    top: 0px;
+}
+
+.page4>.page4-describe {
+    margin: 40px 0 0 0;
+    position: relative;
+    font-size: 20px;
+}
+
+.page4-describe p {
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.page4>.page4-describe>.finger-upward {
+    position: absolute;
+    opacity: 0;
+    top: -20px;
+    left: 8%;
+    width: 60px;
+    transform: rotate(90deg);
+}
+
+
+/**
+ * 第五个页面
+ */
+
+.page5 {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.page5>img {
+    width: 300px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.page5>.img1 {
+    margin: 0 60px 0 0;
+}
+
+.page5>.page5-describe {
+    position: absolute;
+    width: 360px;
+    top: 40%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    right: 0;
+}
+
+.page5>.page5-describe p {
+    opacity: 1;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.page5>.finger {
+    position: absolute;
+    right: 14%;
+    top: -20px;
+    opacity: 0;
+    width: 100px;
+}
+
+.page5>.finger-animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 3s;
+    animation-name: fingerA;
+}
+
+.page5>.describe>p {
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+
+/**
+ * 第六个页面
+ */
+
+.page6 {
+    position: absolute;
+    top: 10%;
+    width: 80%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.page6>img {
+    width: 300px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.page6>.img1 {
+    margin: 0 60px 0 0;
+}
+
+.page6>.page6-describe {
+    position: absolute;
+    width: 360px;
+    top: 40%;
+    font-size: 18px;
+    letter-spacing: 2px;
+    right: 0;
+}
+
+.page6>.page6-describe p {
+    opacity: 1;
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0 0 5px 0;
+}
+
+.page6>.finger {
+    position: absolute;
+    right: 14%;
+    top: -20px;
+    opacity: 0;
+    width: 100px;
+}
+
+.page6>.finger-animate {
+    -webkit-animation-duration: 2s;
+    animation-duration: 3s;
+    animation-name: fingerA;
+}
+
+.page6>.describe>p {
+    line-height: 30px;
+    font-size: 18px;
+    margin: 0 0 20px 0;
+}
+
+
+/**
+ * 媒体查询，适配不同尺寸的屏幕设备
+ */
+
+@media screen and (max-width: 1300px) {
+    .page2, .page3 {
+        width: 86%;
+    }
+    .page2>.page2-describe, .page3>.page3-describe {
+        width: 300px;
+    }
+    .page2>.finger, .page3>.finger {
+        position: absolute;
+        right: 11%;
+        top: -20px;
+        opacity: 0;
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 1160px) {
+    .page2, .page3 {
+        width: 90%;
+        text-align: center;
+    }
+    .page2>.page2-describe, .page3>.page3-describe {
+        width: 90%;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 40px auto 0;
+    }
+    #finger {
+        display: none;
+    }
+    #page3-finger {
+        display: none;
+    }
+}
+
+@-webkit-keyframes fingerA {
+    60% {
+        opacity: 1;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+}
+
+.fingerB {
+    animation-name: fingerB;
+    animation-duration: 2s;
+    opacity: 1;
+}
+
+@-webkit-keyframes fingerB {
+    60% {
+        opacity: 1;
+        transform: translateX(200%) rotate(90deg);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(20%) rotate(90deg);
+    }
+}
+
+.page4>.obliqueTopAndRight {
+    animation-name: obliqueTopAndRight;
+    animation-duration: 1.6s;
+    opacity: 1;
+}
+
+@-webkit-keyframes obliqueTopAndRight {
+    from {
+        opacity: 0;
+        transform: translate(200%, -150%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.page4>.page4-describe>.obliqueBottomAndLeft {
+    animation-name: obliqueBottomAndLeft;
+    animation-duration: 2.4s;
+    opacity: 1;
+}
+
+@-webkit-keyframes obliqueBottomAndLeft {
+    from {
+        opacity: 0;
+        transform: translate(-100%, 600%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.toTheLeft {
+    animation-name: toTheLeft;
+    animation-duration: 1.6s;
+    opacity: 1;
+    transform: translate(-120%, 15px);
+}
+
+@-webkit-keyframes toTheLeft {
+    from {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-120%, 15px);
+    }
+}
+
+.toTheRight {
+    animation-name: toTheRight;
+    animation-duration: 2s;
+    opacity: 1;
+    transform: translate(100%, 30px);
+}
+
+@-webkit-keyframes toTheRight {
+    from {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(100%, 30px);
+    }
+}
