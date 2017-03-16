@@ -6,87 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/jquery.fullPage.css">
-    <link rel="stylesheet" href="css/animate.css">
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
     <link rel="stylesheet" href="css/index.css">
     <script src="js/jquery.min.js"></script>
     <!-- <script src="js/jquery-ui.min.js"></script> -->
-    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
     <title>BiuBiu组队App展示页面</title>
 </head>
 
 <body>
+  <img src="images/music.png" class="music-logo" id="music-play" alt="">
+
     <div id="fullpage">
-      <div class="section" id="section0">
-        <div class="intro" id="welcome-page">
-					<img src="images/logo.png" alt="" class="logo">
-					<h2>BiuBiu组队App</h2>
-					<p> ———— 一种互联网+ 组队方式</p>
-				</div>
-      </div>
-      <div class="section" id="section1">
-        <div class="page2" id="page2-box">
-					<img src="images/index.png" alt="" class="img1 images">
-					<img src="images/index.png" class="img2 images">
-					<div class="page2-describe" id="page2-describe">
-						<p>软件会自动定位用户的位置</p>
-						<p>并加载所在位置的活动、详情页等信息。</p>
-					</div>
-					<img src="images/finger.png" id="finger" class="finger" alt="">
+        <div class="section" id="section0">
+            <div class="page1">
+                <h1 class="title">旅行</h1>
+                <p class="signature">背上行囊去远方，那个梦寐以求的目的地吧。</p>
+                <img src="images/1.jpg" alt="" class="images img1">
+                <img src="images/2.jpg" alt="" class="images img2">
+                <span class="horizontal"></span>
+                <span class="vertical"></span>
+            </div>
+        </div>
+        <div class="section" id="section1">
+          <div class="page2">
+            <div class="left">
+              <p class="label">身未动，心已远</p>
+              <div class="travel">
+                <h2>Travel</h2>
+                <span></span>
+              </div>
+              <div class="thinkSomething">
+                <img src="images/word.png" alt="">
+              </div>
+            </div>
+            <div class="right">
+              <img src="images/3.jpg" class="img1" alt="">
+              <img src="images/4.jpg" class="img2" alt="">
+              <img src="images/5.jpg" class="img3" alt="">
+              <span></span>
 
-				</div>
-      </div>
-      <div class="section" id="section2">
-        <div class="page3" id="page3-box">
-					<img src="images/message.png"  alt="" class="img1 images">
-					<img src="images/chat.png" alt="" class="img2 images">
-					<div class="page3-describe" id="page3-describe">
-						<p>选择自己所在地理位置，可以发送给朋友，邀请同行增加趣味性。</p>
-						<p>还可以通过搜索好友添加朋友</p>
-					</div>
-					<img src="images/finger.png" id="page3-finger" class="finger" alt="">
-				</div>
-      </div>
-      <div class="section" id="section3">
-        <div class="page4" id="page4-box">
-          <div class="card">
-  					<img src="images/public.png" class="images img1">
-            <img src="images/activitylist.png"  class="img2 images" alt="">
-            <img src="images/dynamic.png" class="images img3" alt="">
+            </div>
           </div>
+        </div>
+        <div class="section" id="section2">
 
-          <div class="page4-describe" id="page4-describe">
-						<p>"发布"功能位于活动位置，用户可以发起活动，邀请好友参与。</p>
-						<p>还能发布动态，具有类似朋友圈的功能。</p>
-            <img src="images/fingerTop.png" alt="" class="finger-upward">
-					</div>
+        </div>
+        <div class="section" id="section3">
 
+        </div>
+        <div class="section" id="section5">
 
-				</div>
-      </div>
-      <div class="section" id="section4">
-        <div class="page5" id="page6-box">
-
-          <div class="page5-describe" id="page5-describe">
-						<p>"发布"功能位于活动位置，用户可以发起活动，邀请好友参与。</p>
-						<p>还能发布动态，具有类似朋友圈的功能。</p>
-
-					</div>
-				</div>
-      </div>
-      <div class="section" id="section5">
-        <div class="page5" id="page5-box">
-          <img src="images/search.png" alt="" class="img1 images">
-          <img src="images/activityDetail.png" alt="" class="img2 images">
-          <div class="page5-describe" id="page5-describe">
-						<p>"发布"功能位于活动位置，用户可以发起活动，邀请好友参与。</p>
-						<p>还能发布动态，具有类似朋友圈的功能。</p>
-
-					</div>
-				</div>
-      </div>
+        </div>
     </div>
 
-
+    <audio id="bgMusic">
+      <source src="music/background.mp3" type="audio/mp3">
+    </audio>
     <script type="text/javascript" src="js/index.js"></script>
 </body>
 

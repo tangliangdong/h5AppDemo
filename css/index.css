@@ -3,48 +3,26 @@
     margin: 0;
 }
 
-.section {
-    position: relative;
-}
-
 .images {
     width: 300px;
 }
 
+.section {
+    overflow: hidden;
+}
+
 #section0 {
-    background-color: #eee;
     color: #fff;
     text-shadow: 1px 1px 1px #333;
+    background: url('../images/back.png');
+    background-size: 100%;
 }
 
 #section1 {
     color: #fff;
     text-shadow: 1px 1px 1px #333;
-    background-image: url(../images/2.jpg);
-}
-
-#section2 {
-    background-image: url(../images/3.jpg);
-    color: #fff;
-    text-shadow: 1px 1px 1px #666;
-}
-
-#section3 {
-    color: #008283;
-    background-image: url(../images/4.jpg);
-    text-shadow: 1px 1px 1px #fff;
-}
-
-#section4 {
-    color: #fff;
-    background-image: url(../images/2.jpg);
-    text-shadow: 1px 1px 1px #fff;
-}
-
-#section5 {
-    color: #ff0000;
-    background-image: url(../images/4.jpg);
-    text-shadow: 1px 1px 1px #fff;
+    background: url('../images/back.png');
+    background-size: 100%;
 }
 
 .left {
@@ -56,471 +34,439 @@
  * 第一个页面
  */
 
-.intro {
-    position: absolute;
-    top: 30%;
-    left: 54%;
-    width: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    text-align: center;
-}
-
-.intro>.logo {
-    width: 160px;
-    float: left;
-}
-
-.intro>h2 {
-    font-size: 40px;
-    margin: 20px 0 16px 0;
-    letter-spacing: 3px;
-    opacity: 0;
-}
-
-.intro>p {
-    opacity: 0;
-    font-size: 20px;
-}
-
-
-/**
- * 第二个页面
- */
-
-.page2 {
-    position: absolute;
-    top: 10%;
-    width: 80%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.page2>img {
-    width: 300px;
-    display: inline-block;
-    opacity: 0;
-}
-
-.page2>.img1 {
-    margin: 0 60px 0 0;
-    opacity: 0;
-}
-
-.page2>.page2-describe {
-    position: absolute;
-    width: 360px;
-    top: 40%;
-    font-size: 18px;
-    letter-spacing: 2px;
-    right: 0;
-}
-
-.page2>.page2-describe p {
-    opacity: 0;
-    line-height: 30px;
-    font-size: 18px;
-    margin: 0 0 5px 0;
-}
-
-.page2>.finger {
-    position: absolute;
-    right: 14%;
-    top: -20px;
-    opacity: 0;
-    width: 100px;
-}
-
-.page2>.finger-animate {
-    -webkit-animation-duration: 2s;
-    animation-duration: 3s;
-    animation-name: fingerA;
-}
-
-
-/**
- * 第三个页面
- */
-
-.page3 {
-    position: absolute;
-    top: 10%;
-    width: 80%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.page3>img {
-    width: 300px;
-    display: inline-block;
-    opacity: 0;
-}
-
-.page3>.img1 {
-    margin: 0 60px 0 0;
-}
-
-.page3>.page3-describe {
-    position: absolute;
-    width: 360px;
-    top: 40%;
-    font-size: 18px;
-    letter-spacing: 2px;
-    right: 0;
-}
-
-.page3>.page3-describe p {
-    opacity: 0;
-    line-height: 30px;
-    font-size: 18px;
-    margin: 0 0 5px 0;
-}
-
-.page3>.finger {
-    position: absolute;
-    right: 14%;
-    top: -20px;
-    opacity: 0;
-    width: 100px;
-}
-
-.page3>.finger-animate {
-    -webkit-animation-duration: 2s;
-    animation-duration: 3s;
-    animation-name: fingerA;
-}
-
-.page3>.describe>p {
-    line-height: 30px;
-    font-size: 18px;
-    margin: 0 0 20px 0;
-}
-
-
-/**
- * 第四页面
- */
-
-.page4 {
-    position: absolute;
-    text-align: center;
-    top: 1%;
-    width: 80%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.card {
-    width: 340px;
+.page1 {
+    width: 100%;
+    height: 100%;
+    background: url('../images/back.png');
+    background-size: 100%;
     position: relative;
-    height: 580px;
-    margin: 1% auto;
+    /*transform-style: preserve-3d;*/
+    perspective: 600px;
+}
+
+.music-logo {
+    z-index: 100;
+    opacity: .7;
+    width: 50px;
+    right: 0;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+}
+
+.page1>.title {
+    text-align: right;
+    opacity: 0;
+    padding: 80px 30px 0;
+}
+
+.page1>.signature {
+    text-align: right;
+    padding: 10px 10px 0 0;
     opacity: 0;
 }
 
-.page4>.card>.images {
-    width: 90%;
+.page1>.img1 {
+    width: 70%;
+    opacity: 0;
     position: absolute;
-    box-shadow: 10px 10px 10px #333333;
+    top: calc(39% - 3px);
+    left: 2%;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    -webkit-perspective: 100px;
+    perspective: 100px;
 }
 
-.page4>.card img {
-    /*width: 26%;*/
+.page1>.img2 {
+    width: 40%;
+    opacity: 0;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+    -webkit-perspective: 100px;
+    perspective: 100px;
 }
 
-.page4>.card>.img1 {
-    left: 0px;
-    top: 30px;
+.horizontal {
+    transform-origin: 0 0 -100px;
+    display: block;
+    position: absolute;
+    /*width: 0;*/
+    background: white;
+    height: 2px;
+    top: 40%;
+    left: 0;
 }
 
-.page4>.card>.img2 {
-    left: 20px;
-    top: 15px;
+.vertical {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 4%;
+    /*height: 0;*/
+    width: 2px;
+    background: white;
 }
 
-.page4>.card>.img3 {
-    left: 40px;
-    top: 0px;
+
+/**
+ * 第二页
+ */
+
+.page2>.left {
+    display: inline-block;
+    width: 38%;
 }
 
-.page4>.page4-describe {
-    margin: 40px 0 0 0;
+.page2>.left>.label {
+    background-color: #888;
+    padding: 5px 10px;
+    font-size: 14px;
+    width: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 40%;
+    opacity: 0;
+}
+
+.page2>.left>.travel {
+    margin: 40px 0 0 10px;
+    color: #888;
+}
+
+.page2>.left>.travel>h2 {
+    transform: translateX(-100%);
+    transition: .6s ease;
+    opacity: 0;
+}
+
+.page2>.left>.travel>span {
+    display: block;
+    height: 4px;
+    width: 0%;
+    transition: .6s ease;
+    margin: 8px 0 0 0;
+    background-color: #888;
+}
+
+.page2>.left>.thinkSomething {
+    padding: 20px 0 90px;
+    margin: 40px 0 0 10px;
+    text-align: center;
+    width: 70%;
+    transform: scale(0);
+    background-color: white;
+    transition: .7s ease;
+}
+
+.page2>.left>.thinkSomething>img {
+    width: 70%;
+    margin: 0 auto;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.page2>.right {
+    display: inline-block;
     position: relative;
-    font-size: 20px;
+    width: 60%;
 }
 
-.page4-describe p {
-    margin-top: 10px;
-    opacity: 0;
+.page2>.right>img {
+    width: 98%;
+    margin: 2px 1%;
+    transform: translateX(120%);
+    transition: 3s ease;
 }
 
-.page4>.page4-describe>.finger-upward {
+.page2>.right>span {
+    width: 4px;
+    display: block;
+    height: 100%;
     position: absolute;
-    opacity: 0;
-    top: -20px;
-    left: 8%;
-    width: 60px;
-    transform: rotate(90deg);
+    right: 5%;
+    top: 0;
+    background-color: white;
 }
 
 
 /**
- * 第五个页面
+ * 自定义的动画效果
  */
 
-.page5 {
-    position: absolute;
-    top: 10%;
-    width: 80%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.page5>img {
-    width: 300px;
-    display: inline-block;
-    opacity: 1;
-}
-
-.page5>.img1 {
-    margin: 0 60px 0 0;
-}
-
-.page5>.page5-describe {
-    position: absolute;
-    width: 360px;
-    top: 40%;
-    font-size: 18px;
-    letter-spacing: 2px;
-    right: 0;
-}
-
-.page5>.page5-describe p {
-    opacity: 1;
-    line-height: 30px;
-    font-size: 18px;
-    margin: 0 0 5px 0;
-}
-
-.page5>.finger {
-    position: absolute;
-    right: 14%;
-    top: -20px;
-    opacity: 0;
-    width: 100px;
-}
-
-.page5>.finger-animate {
-    -webkit-animation-duration: 2s;
-    animation-duration: 3s;
-    animation-name: fingerA;
-}
-
-.page5>.describe>p {
-    line-height: 30px;
-    font-size: 18px;
-    margin: 0 0 20px 0;
-}
-
-
-/**
- * 第六个页面
- */
-
-.page6 {
-    position: absolute;
-    top: 10%;
-    width: 80%;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
-
-.page6>img {
-    width: 300px;
-    display: inline-block;
-    opacity: 1;
-}
-
-.page6>.img1 {
-    margin: 0 60px 0 0;
-}
-
-.page6>.page6-describe {
-    position: absolute;
-    width: 360px;
-    top: 40%;
-    font-size: 18px;
-    letter-spacing: 2px;
-    right: 0;
-}
-
-.page6>.page6-describe p {
-    opacity: 1;
-    line-height: 30px;
-    font-size: 18px;
-    margin: 0 0 5px 0;
-}
-
-.page6>.finger {
-    position: absolute;
-    right: 14%;
-    top: -20px;
-    opacity: 0;
-    width: 100px;
-}
-
-.page6>.finger-animate {
-    -webkit-animation-duration: 2s;
-    animation-duration: 3s;
-    animation-name: fingerA;
-}
-
-.page6>.describe>p {
-    line-height: 30px;
-    font-size: 18px;
-    margin: 0 0 20px 0;
-}
-
-
-/**
- * 媒体查询，适配不同尺寸的屏幕设备
- */
-
-@media screen and (max-width: 1300px) {
-    .page2, .page3 {
-        width: 86%;
+@keyframes verticalSpread {
+    from {
+        height: 0;
     }
-    .page2>.page2-describe, .page3>.page3-describe {
-        width: 300px;
+    to {
+        height: 100%;
     }
-    .page2>.finger, .page3>.finger {
-        position: absolute;
-        right: 11%;
-        top: -20px;
+}
+
+.verticalSpread {
+    -webkit-animation-name: verticalSpread;
+    animation-name: verticalSpread;
+}
+
+@keyframes horizontalSpread {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.horizontalSpread {
+    -webkit-animation-name: horizontalSpread;
+    animation-name: horizontalSpread;
+}
+
+@keyframes imgRotate {
+    0% {
+        transform: rotateY(90deg);
         opacity: 0;
+    }
+    50% {
+        transform: rotateY(-30deg);
+    }
+    75% {
+        transform: rotateY(20deg);
+    }
+    94% {
+        transform: rotateY(-5deg);
+    }
+    to {
+        transform: rotateY(0deg);
+        opacity: 1;
+    }
+}
+
+.imgRotate {
+    -webkit-animation-name: imgRotate;
+    animation-name: imgRotate;
+    opacity: 1;
+}
+
+@keyframes wordTensile {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    80% {
+        width: 120px;
+    }
+    to {
         width: 100px;
+        opacity: 1;
     }
 }
 
-@media screen and (max-width: 1160px) {
-    .page2, .page3 {
-        width: 90%;
-        text-align: center;
+.wordTensile {
+    -webkit-animation-name: wordTensile;
+    animation-name: wordTensile;
+    opacity: 1;
+    -webkit-animation-duration: .6s;
+    animation-duration: .6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes imgScale {
+    0% {
+        width: 0;
+        opacity: 0;
     }
-    .page2>.page2-describe, .page3>.page3-describe {
-        width: 90%;
-        position: relative;
-        top: auto;
-        left: auto;
-        margin: 40px auto 0;
+    80% {
+        transform: scale(1.2);
     }
-    #finger {
-        display: none;
-    }
-    #page3-finger {
-        display: none;
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }
 
-@-webkit-keyframes fingerA {
+.imgScale {
+    -webkit-animation-name: imgScale;
+    animation-name: imgScale;
+    opacity: 1;
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes imgTransform {
+    from {
+        transform: translateX(120%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.imgTransform {
+    -webkit-animation-name: imgTransform;
+    animation-name: imgTransform;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+
+/**
+ * animate.css库
+ */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInDownBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -2000px, 0);
+        transform: translate3d(0, -2000px, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
     60% {
         opacity: 1;
-        transform: translateY(100%);
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
     }
     to {
-        opacity: 0;
-        transform: translateY(20%);
+        -webkit-transform: none;
+        transform: none;
     }
 }
 
-.fingerB {
-    animation-name: fingerB;
-    animation-duration: 2s;
-    opacity: 1;
-}
-
-@-webkit-keyframes fingerB {
+@keyframes bounceInLeft {
+    from, 60%, 75%, 90%, to {
+        -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-3000px, 0, 0);
+        transform: translate3d(-3000px, 0, 0);
+    }
     60% {
         opacity: 1;
-        transform: translateX(200%) rotate(90deg);
+        -webkit-transform: translate3d(25px, 0, 0);
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        -webkit-transform: translate3d(5px, 0, 0);
+        transform: translate3d(5px, 0, 0);
     }
     to {
-        opacity: 0;
-        transform: translateX(20%) rotate(90deg);
+        -webkit-transform: none;
+        transform: none;
     }
 }
 
-.page4>.obliqueTopAndRight {
-    animation-name: obliqueTopAndRight;
-    animation-duration: 1.6s;
-    opacity: 1;
+.bounceInLeft {
+    -webkit-animation-name: bounceInLeft;
+    animation-name: bounceInLeft;
 }
 
-@-webkit-keyframes obliqueTopAndRight {
+@-webkit-keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translate(200%, -150%);
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+        transform: rotate(45deg);
     }
     to {
         opacity: 1;
-        transform: translate(0, 0);
+        -webkit-transform: none;
+        transform: none;
+        transform: rotate(45deg);
     }
 }
 
-.page4>.page4-describe>.obliqueBottomAndLeft {
-    animation-name: obliqueBottomAndLeft;
-    animation-duration: 2.4s;
-    opacity: 1;
-}
-
-@-webkit-keyframes obliqueBottomAndLeft {
+@keyframes fadeInLeft {
     from {
         opacity: 0;
-        transform: translate(-100%, 600%);
+        -webkit-transform: translate3d(-100%, 0, 0) rotate(45deg);
+        transform: translate3d(-100%, 0, 0) rotate(45deg);
     }
     to {
         opacity: 1;
-        transform: translate(0, 0);
+        -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+        transform: translate3d(0, 0, 0) rotate(45deg);
     }
 }
 
-.toTheLeft {
-    animation-name: toTheLeft;
-    animation-duration: 1.6s;
-    opacity: 1;
-    transform: translate(-120%, 15px);
-}
-
-@-webkit-keyframes toTheLeft {
-    from {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate(-120%, 15px);
-    }
-}
-
-.toTheRight {
-    animation-name: toTheRight;
-    animation-duration: 2s;
-    opacity: 1;
-    transform: translate(100%, 30px);
-}
-
-@-webkit-keyframes toTheRight {
-    from {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    to {
-        opacity: 1;
-        transform: translate(100%, 30px);
-    }
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
